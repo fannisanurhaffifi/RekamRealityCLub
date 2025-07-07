@@ -1,0 +1,894 @@
+:root {
+  --primary: #d11515;
+  --bg: #0f0e0e;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: "poppins" "Dancing Script", poppins;
+  background-color: var(--bg);
+  color: #fff;
+}
+
+/*Navbar*/
+.navbar {
+  font-family: "poppins";
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.4rem 7%;
+  background-color: var(--bg);
+  border-bottom: 10px solid var(--primary);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+}
+
+.navbar .navbar-logo {
+  font-family: "poppins";
+  font-size: 2rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.navbar .navbar-logo span {
+  font-family: "Dancing Script";
+  color: var(--primary);
+}
+
+.navbar .navbar-nav a {
+  color: #fff;
+  display: inline-block;
+  font-size: 1.4rem;
+  margin: 0 1rem;
+}
+
+.navbar .navbar-nav a:hover {
+  color: var(--primary);
+}
+
+.navbar .navbar-nav a::after {
+  content: "";
+  display: block;
+  padding-bottom: 0.5rem;
+  border-bottom: 0.1rem solid var(--primary);
+  transform: scaleX(0);
+  transition: 0.2s linear;
+}
+
+.navbar .navbar-nav a:hover::after {
+  transform: scaleX(0.5);
+}
+
+.navbar .navbar-extra a {
+  color: #fff;
+  margin: 0 0.5rem;
+}
+
+.navbar .navbar-extra a:hover {
+  color: var(--primary);
+}
+
+#hamburger-menu {
+  display: none;
+}
+
+/*Hero Section*/
+.hero {
+  font-family: "poppins";
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background-image: url("wdyrk1.jpg");
+  max-width: 105004px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.hero .content {
+  padding: 1.4rem 7%;
+  max-width: 60rem;
+}
+
+.hero .content h1 {
+  font-size: 2cm;
+  font: "poppins";
+  color: #fff;
+  text-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
+}
+
+.hero .content p {
+  font-size: 1.6rem;
+  font: "poppins";
+  color: #fff;
+  margin-top: 1rem;
+  line-height: 1.4;
+  font-weight: 100;
+  text-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
+  mix-blend-mode: difference;
+}
+
+.hero .content .cta {
+  margin-top: 1rem;
+  display: inline-block;
+  padding: 1rem 3rem;
+  font-size: 1.4rem;
+  font-family: "poppins";
+  color: #000;
+  background-color: var(--primary);
+}
+
+/*Members Section*/
+
+.Members {
+  font-family: "poppins";
+  padding: 7% 1.4rem;
+}
+
+.Members h2 {
+  text-align: center;
+  font-size: 3rem;
+  font: "poppins";
+  color: #fff;
+  margin-bottom: 2rem;
+}
+.Members h2 span {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  color: var(--primary);
+  font-family: "Dancing Script";
+}
+
+.Members .row2 {
+  display: right flex;
+  padding: 7%;
+  padding-bottom: 1%;
+}
+
+.Members .row2 .chia-img img {
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+
+.Members .row2 .content {
+  flex: 1 1 1rem;
+  padding: 0 1rem;
+  padding-right: 2%;
+}
+
+.Members .row2 .content h4 {
+  font-size: 1.5cm;
+  font: "poppins";
+  color: #fff;
+}
+
+.Members .row2 .content p {
+  font-size: 1.4rem;
+  font-weight: 1rem;
+  line-height: 1.6;
+  font: "poppins";
+  color: #fff;
+}
+
+.Members .row3 {
+  display: flex;
+  padding: 7%;
+  padding-bottom: 3%;
+  padding-top: 1%;
+}
+
+.Members .row3 .faiz-img img {
+  flex: 1 0 35rem;
+  margin-top: 2rem;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+
+.Members .row3 .content {
+  flex: 1 1 40rem;
+  padding: 0 1rem;
+  margin-top: 1rem;
+}
+
+.Members .row3 .content h5 {
+  font-size: 1.5cm;
+  margin-bottom: 1rem;
+  font: "poppins";
+  color: #fff;
+}
+
+.Members .row3 .content p {
+  margin-bottom: 10rem;
+  font-size: 1.4rem;
+  font-weight: 1rem;
+  font: "poppins";
+  color: #fff;
+  line-height: 1.6;
+}
+
+.Members .row4 {
+  display: right flex;
+  padding: 5rem 7%;
+  padding-top: 0%;
+  padding-bottom: 0%;
+}
+
+.Members .row4 .nugi-img img {
+  flex: 1 1 40rem;
+  margin-top: 0;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+
+.Members .row4 .content {
+  flex: 1 1 35rem;
+  padding: 0 1rem;
+}
+
+.Members .row4 .content h6 {
+  font-size: 1.5cm;
+  font: "poppins";
+  color: #fff;
+}
+
+.Members .row4 .content p {
+  margin-bottom: 10rem;
+  font-size: 1.4rem;
+  font-weight: 1rem;
+  line-height: 1.6;
+  font: "poppins";
+  color: #fff;
+}
+
+.Members .row5 {
+  display: flex;
+  padding: 7%;
+  padding-bottom: 0%;
+  padding-top: 1%;
+}
+
+.Members .row5 .era-img img {
+  flex: 1 0 35rem;
+  margin-top: 2rem;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+
+.Members .row5 .content {
+  flex: 1 0 45rem;
+  padding: 0 12rem;
+  margin-top: 1rem;
+}
+
+.Members .row5 .content h7 {
+  font-size: 1.5cm;
+  font: "poppins";
+  color: #fff;
+  margin-bottom: 1rem;
+  font-weight: 700;
+  padding-left: 10px;
+}
+
+.Members .row5 .content p {
+  margin-bottom: 10rem;
+  font-size: 1.4rem;
+  font-weight: 1rem;
+  font: "poppins";
+  color: #fff;
+  line-height: 1.6;
+  padding-left: 10px;
+}
+
+/*Albums Section*/
+
+.Albums {
+  font-family: "poppins";
+  padding: 7% 1.4rem;
+  padding-bottom: 2rem;
+}
+.Albums h2 {
+  text-align: center;
+  font-size: 3rem;
+  font: "poppins";
+  color: #fff;
+  padding-top: 5rem;
+  padding-bottom: 2rem;
+}
+
+.Albums h2 span {
+  color: #f10c0c;
+  font-family: "Dancing Script";
+  font-size: 3rem;
+}
+
+.Albums h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  padding-bottom: 2rem;
+  font: "poppins";
+  color: #fff;
+  text-align: center;
+}
+
+.Albums .row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 5rem;
+  margin: 2%;
+  justify-content: center;
+  grid-gap: 70px;
+}
+
+.Albums .row .albums-card {
+  text-align: center;
+}
+
+.Albums .row .albums-card img {
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+
+.Albums h9 {
+  font-size: 2.6rem;
+  font-weight: 700;
+  font: "poppins";
+  color: #fff;
+}
+
+.Albums h9 span {
+  font-size: 2.6;
+  font-weight: 700;
+  font: "poppins";
+  color: var(--primary);
+}
+
+.Albums .album-content1 {
+  display: flex;
+  padding-bottom: 10%;
+  padding-top: 3%;
+}
+.Albums .album-content1 .reviewngb {
+  flex: 1 1 40rem;
+}
+
+.Albums .album-content1 .content {
+  padding-left: 5rem;
+}
+
+.Albums .album-content1 .content h6 {
+  font-size: 1.8rem;
+  padding-bottom: 1%;
+  font: "poppins";
+  color: #fff;
+}
+
+.Albums .album-content1 .content p {
+  margin-bottom: 1rem;
+  font-size: 1.4rem;
+  font: "poppins";
+  color: #fff;
+  font-weight: 1rem;
+  line-height: 1.6;
+}
+
+.Albums .album-content2 {
+  display: flex;
+  padding-bottom: 10%;
+}
+
+.Albums .album-content2 .reviewwdyrk {
+  flex: 1 1 45rem;
+}
+
+.Albums .album-content2 .content {
+  padding-left: 5rem;
+}
+
+.Albums .album-content2 .content h6 {
+  font-size: 1.8rem;
+  padding-bottom: 1%;
+  font: "poppins";
+  color: #fff;
+}
+
+.Albums .album-content2 .content p {
+  font: "poppins";
+  color: #fff;
+  margin-bottom: 1rem;
+  font-size: 1.4rem;
+  font-weight: 1rem;
+  line-height: 1.6;
+}
+
+.Albums .album-content3 {
+  display: flex;
+  width: 100%;
+  padding-bottom: 10%;
+}
+
+.Albums .album-content3 .reviewrcp {
+  flex: 1 1 45rem;
+}
+
+.Albums .album-content3 .content {
+  padding-left: 5rem;
+}
+
+.Albums .album-content3 .content h6 {
+  font-size: 1.8rem;
+  padding-bottom: 1%;
+  font: "poppins";
+  color: #fff;
+}
+
+.Albums .album-content3 .content p {
+  margin-bottom: 1rem;
+  font-size: 1.4rem;
+  font-weight: 1rem;
+  line-height: 1.6;
+  font: "poppins";
+  color: #fff;
+}
+
+/*Shows Section*/
+.Show {
+  font-family: "poppins";
+  padding: 7% 1.4rem;
+  padding-top: 5rem;
+}
+
+.Show h2 {
+  font-family: "poppins";
+  text-align: center;
+  font-size: 3rem;
+  color: #fff;
+  padding: 2rem;
+}
+
+.Show h2 span {
+  font-family: "Dancing Script";
+  text-align: center;
+  font-size: 3rem;
+  color: var(--primary);
+}
+
+.Show .content {
+  padding: 3rem;
+}
+
+.Show .content .container1 {
+  display: grid;
+  color: #fff;
+  font: "poppins";
+  background-color: #f4090969;
+  grid-template-columns: 45% 45% 10px;
+  margin: 3rem;
+  font-weight: 700;
+  padding: 1rem;
+  font-size: 1.4rem;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+
+/*Merch Section*/
+
+.Merchandise {
+  font-family: "poppins";
+  padding: 7% 1.4rem;
+}
+.Merchandise h2 {
+  text-align: center;
+  font: "poppins";
+  color: #fff;
+  font-size: 3rem;
+  margin-bottom: 3rem;
+  padding-top: 5rem;
+}
+
+.Merchandise h2 span {
+  color: #f10c0c;
+  font-family: "Dancing Script";
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+
+.Merchandise h3 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  font: "poppins";
+  color: #fff;
+}
+
+.Merchandise .row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 5rem;
+  margin: 2%;
+  justify-content: center;
+  grid-gap: 20px;
+}
+
+.Merchandise .row .merch-card {
+  text-align: center;
+}
+
+.Merchandise .row .merch-card img {
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+
+.Merchandise-title {
+  color: #fff;
+}
+
+/*About us*/
+
+.AboutUs {
+  padding: 7% 1.4rem;
+  display: flex;
+}
+
+.AboutUs .content {
+  align-items: center;
+  padding-top: 2.3rem;
+}
+
+.AboutUs .content h2 {
+  color: #fff;
+  font-family: "poppins";
+  text-align: center;
+  font-size: 1.5cm;
+  padding-top: 2rem;
+}
+
+.AboutUs .content h2 span {
+  color: var(--primary);
+  font-family: "poppins";
+  text-align: center;
+  font-size: 1.5cm;
+}
+
+.AboutUs .content h3 {
+  font-size: 2.2rem;
+  font-weight: 100;
+  font-family: "poppins";
+  color: #fff;
+  text-align: center;
+}
+
+.AboutUs .content .wrapper {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.AboutUs .content .wrapper .username {
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+  font-size: 1.8rem;
+  font-family: "poppins";
+  color: #fff;
+}
+
+.AboutUs .content .wrapper .username input {
+  padding: 3px;
+}
+
+.AboutUs .content .wrapper .feedback {
+  padding-bottom: 2rem;
+  font-size: 1.8rem;
+  font-family: "poppins";
+  color: #fff;
+  padding-right: 3px;
+}
+
+.AboutUs .content .wrapper .feedback input {
+  padding: 3px;
+}
+
+.AboutUs .content .wrapper .submit {
+  font-family: "poppins";
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #000;
+}
+
+.AboutUs .content .wrapper .submit input {
+  align-items: center;
+  justify-content: center;
+  margin-left: 10rem;
+  padding: 5px;
+  font: "poppins";
+  font-weight: 500;
+  color: #000;
+}
+
+.AboutUs .content p {
+  font-size: 1.4rem;
+  padding: 7%;
+  font-family: "poppins";
+  color: #fff;
+  text-align: justify;
+}
+
+/* Laptop */
+@media (max-width: 1440px) {
+  html {
+    font-size: 75%;
+  }
+}
+
+/* Tablet*/
+@media (max-width: 1247px) {
+  html {
+    font-size: 62.5%;
+  }
+
+  #hamburger-menu {
+    display: inline-block;
+  }
+
+  .navbar .navbar-nav {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    background-color: #fff;
+    width: 30rem;
+    height: 100vh;
+    transition: 0.3s;
+  }
+
+  .navbar .navbar-nav.active {
+    right: 0;
+  }
+
+  .navbar .navbar-nav a {
+    color: var(--bg);
+    display: block;
+    margin: 1.5 rem;
+    padding: 0.5rem;
+    font-size: 2rem;
+  }
+  .navbar.navbar-nav a ::after {
+    transform-origin: 0 0;
+  }
+
+  .navbar.navbar-nav a :hover::after {
+    transform: scaleX(0.2);
+  }
+
+  .Albums .album-content1 {
+    flex-wrap: wrap;
+  }
+
+  .Albums .album-content1 .reviewngb img {
+    height: 24rem;
+    object-fit: cover;
+  }
+
+  .Albums .album-content1 .content {
+    padding: 0;
+  }
+
+  .Albums .album-content2 {
+    flex-wrap: wrap;
+  }
+
+  .Albums .album-content2 .reviewwdyrk img {
+    height: 24rem;
+    object-fit: cover;
+  }
+
+  .Albums .album-content2 .content {
+    padding: 0;
+  }
+
+  .Albums .album-content3 {
+    flex-wrap: wrap;
+  }
+  .Albums .album-content3 .reviewrcp img {
+    height: 24rem;
+    object-fit: cover;
+  }
+  .Albums .album-content3 .content {
+    padding: 0;
+  }
+
+  .AboutUs .content .wrapper {
+    flex-wrap: wrap;
+    object-fit: cover;
+  }
+}
+
+/* Mobile Phone*/
+@media (max-width: 450px) {
+  html {
+    font-size: 55%;
+  }
+
+  .Album .row {
+    flex-wrap: wrap;
+  }
+
+  .Albums .row .albums-card img {
+    height: 24rem;
+    object-fit: cover;
+  }
+}
+
+/*end*/
+
+/*members pt2*/
+
+.Members h2 {
+  text-align: center;
+  font-size: 3rem;
+  padding-top: 5rem;
+  padding-bottom: 2rem;
+  font: "poppins";
+  color: #fff;
+}
+
+.Members h2 span {
+  color: #f10c0c;
+  font-family: "Dancing Script";
+  font-size: 3rem;
+}
+
+.Members .row2 {
+  flex-wrap: wrap;
+  float: right;
+}
+
+.Members .row2 .chia-img img {
+  height: 24rem;
+  object-fit: cover;
+  object-position: center;
+}
+
+.Members .row2 .content {
+  padding: 0;
+}
+
+.Members .row2 .content h4 {
+  font-size: 2rem;
+  font: "poppins";
+  color: #fff;
+}
+
+.Members .row2 .content p {
+  font-size: 1.6rem;
+  font: "poppins";
+  color: #fff;
+}
+
+.Members .row3 {
+  flex-wrap: wrap;
+}
+
+.Members .row3 .faiz-img img {
+  height: 24rem;
+  object-fit: cover;
+  object-position: center;
+}
+
+.Members .row3 .content {
+  align-content: center;
+}
+
+.Members .row3 .content h5 {
+  font-size: 2rem;
+  font: "poppins";
+  color: #fff;
+}
+
+.Members .row3 .content p {
+  font-size: 1.6rem;
+  font: "poppins";
+  color: #fff;
+}
+
+.Members .row4 {
+  flex-wrap: wrap;
+  float: right;
+}
+
+.Members .row4 .nugi-img img {
+  height: 24rem;
+  object-fit: cover;
+  object-position: center;
+}
+
+.Members .row4 .content {
+  padding: 0;
+}
+
+.Members .row4 .content h6 {
+  font-size: 2rem;
+  object-fit: cover;
+  font: "poppins";
+  color: #fff;
+}
+
+.Members .row4 .content p {
+  font-size: 1.6rem;
+  font: "poppins";
+  color: #fff;
+}
+
+.Members .row5 {
+  flex-wrap: wrap;
+}
+
+.Members .row5 .era-img img {
+  height: 24rem;
+  object-fit: cover;
+  object-position: center;
+}
+
+.Members .row5 .content {
+  padding: 0;
+}
+
+.Members .row5 .content h7 {
+  margin-top: 1 rem;
+  font-size: 2rem;
+  font: "poppins";
+  color: #fff;
+}
+
+.Members .row5 .content p {
+  font-size: 1.6rem;
+  font: "poppins";
+  color: #fff;
+}
+
+/*footer*/
+
+.footer-bottom h3 span {
+  font-family: "dancing script";
+  color: #f10c0c;
+}
+
+.footer-bottom {
+  height: 100px;
+  padding: 25px 5px;
+  text-align: center;
+  font: "poppins";
+  background-color: #f4090969;
+}
+.footer-bottom p {
+  font-size: 14px;
+  margin-bottom: 5px;
+  font: "poppins";
+  color: #fff;
+  word-spacing: 2px;
+  text-transform: capitalize;
+}
