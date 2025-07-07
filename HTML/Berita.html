@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Reality Club</title>
+        <meta name="title" content="Rekam Reality Club" />
+        <meta
+          name="description"
+          content="Unofficial website of Reality Club. Reality Club is an indie 
+        rock music group from Indonesia which was formed on April 16 2016. This music group is fronted 
+        by Fathia Izzati who is also a YouTuber."
+        />
+        <meta
+          name="keywords"
+          content="Reality Club, Fathia Izzati, Faiz Novascotia, Nugi Wicaksono, Era Patigo"
+        />
+        <meta name="author" content="Annisa Tri Hapsari, Fannisa Nurhaffifi" />
+    
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+          rel="stylesheet"
+        />
+        <script src="https://unpkg.com/feather-icons"></script>
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css"
+          integrity="sha512-OQDNdI5rpnZ0BRhhJc+btbbtnxaj+LdQFeh0V9/igiEPDiWE2fG+ZsXl0JEH+bjXKPJ3zcXqNyP4/F/NegVdZg=="
+          crossorigin="anonymous"
+          referrerpolicy="no-referrer"
+        />
+    <style>
+        :root {
+  --primary: #d11515;
+  --bg: #0f0e0e;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: "poppins" "Dancing Script", poppins;
+  background-color: var(--bg);
+  color: #fff;
+}
+
+/*Navbar*/
+.navbar {
+  font-family: "poppins";
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.4rem 7%;
+  background-color: var(--bg);
+  border-bottom: 10px solid var(--primary);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+}
+
+.navbar .navbar-logo {
+  font-family: "poppins";
+  font-size: 2rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.navbar .navbar-logo span {
+  font-family: "Dancing Script";
+  color: var(--primary);
+}
+
+.navbar .navbar-nav a {
+  color: #fff;
+  display: inline-block;
+  font-size: 1.4rem;
+  margin: 0 1rem;
+}
+
+.navbar .navbar-nav a:hover {
+  color: var(--primary);
+}
+
+.navbar .navbar-nav a::after {
+  content: "";
+  display: block;
+  padding-bottom: 0.5rem;
+  border-bottom: 0.1rem solid var(--primary);
+  transform: scaleX(0);
+  transition: 0.2s linear;
+}
+
+.navbar .navbar-nav a:hover::after {
+  transform: scaleX(0.5);
+}
+
+.navbar .navbar-extra a {
+  color: #fff;
+  margin: 0 0.5rem;
+}
+
+.navbar .navbar-extra a:hover {
+  color: var(--primary);
+}
+
+#hamburger-menu {
+  display: none;
+}
+        body {
+            font-family: "poppins";
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            text-align: center;
+            font-family: "poppins";
+            font-size: 3rem;
+            color: #fff;
+            margin-top: 60px;
+            position: relative;
+            letter-spacing: 2px;
+            padding-top: 5rem;
+        }
+
+        h4 {
+            text-align: center;
+            position: relative;
+            color: var(--primary);
+            letter-spacing: 2px;
+            font-weight: 500;
+            font-size: 20px;
+        }
+
+        .back-link {
+            position: absolute;
+            top: 50%;
+            left: 10%;
+            transform: translateY(-50%);
+            font-size: 24px;
+            text-decoration: none;
+            color: black;
+        }
+
+        #newsFeed {
+            width: 1500px;
+            max-width: 100%;
+            margin: 20px auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 7%;
+        }
+
+        .newsItem {
+            width: 30%;
+            margin-bottom: 20px;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .newsItem img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .newsItem h2 {
+            font-size: 1.2rem;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            color: black;
+            flex-grow: 1;
+            font: "poppins";
+  color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .newsItem a {
+            text-decoration: none;
+            color: var(--primary);
+            font: "poppins";
+            letter-spacing: 2px;
+            font-size: 16px;
+            font-weight: 500;
+        }
+
+        .newsItem a:hover {
+            color: var(--primary);
+        }
+
+        /* Laptop */
+@media (max-width: 1440px) {
+  html {
+    font-size: 75%;
+  }
+}
+
+/* Tablet*/
+@media (max-width: 1247px) {
+  html {
+    font-size: 62.5%;
+  }
+
+  #hamburger-menu {
+    display: inline-block;
+  }
+
+  .navbar .navbar-nav {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    background-color: #fff;
+    width: 30rem;
+    height: 100vh;
+    transition: 0.3s;
+  }
+
+  .navbar .navbar-nav.active {
+    right: 0;
+  }
+
+  .navbar .navbar-nav a {
+    color: var(--bg);
+    display: block;
+    margin: 1.5 rem;
+    padding: 0.5rem;
+    font-size: 2rem;
+  }
+  .navbar.navbar-nav a ::after {
+    transform-origin: 0 0;
+  }
+
+  .navbar.navbar-nav a :hover::after {
+    transform: scaleX(0.2);
+  }
+
+  .Albums .album-content1 {
+    flex-wrap: wrap;
+  }
+
+  .Albums .album-content1 .reviewngb img {
+    height: 24rem;
+    object-fit: cover;
+  }
+
+  .Albums .album-content1 .content {
+    padding: 0;
+  }
+
+  .Albums .album-content2 {
+    flex-wrap: wrap;
+  }
+
+  .Albums .album-content2 .reviewwdyrk img {
+    height: 24rem;
+    object-fit: cover;
+  }
+
+  .Albums .album-content2 .content {
+    padding: 0;
+  }
+
+  .Albums .album-content3 {
+    flex-wrap: wrap;
+  }
+  .Albums .album-content3 .reviewrcp img {
+    height: 24rem;
+    object-fit: cover;
+  }
+  .Albums .album-content3 .content {
+    padding: 0;
+  }
+
+  .AboutUs .content .wrapper {
+    flex-wrap: wrap;
+    object-fit: cover;
+  }
+}
+
+/* Mobile Phone*/
+@media (max-width: 450px) {
+  html {
+    font-size: 55%;
+  }
+
+  .Album .row {
+    flex-wrap: wrap;
+  }
+
+  .Albums .row .albums-card img {
+    height: 24rem;
+    object-fit: cover;
+  }
+}
+
+/*footer*/
+
+.footer-bottom h3 span {
+  font-family: "dancing script";
+  color: #f10c0c;
+}
+
+.footer-bottom {
+  height: 100px;
+  padding: 25px 5px;
+  text-align: center;
+  background-color: #f4090969;
+}
+.footer-bottom p {
+  font-size: 14px;
+  margin-bottom: 5px;
+  font: "poppins";
+  color: #fff;
+  word-spacing: 2px;
+  text-transform: capitalize;
+}
+
+/* Laptop */
+@media (max-width: 1440px) {
+  html {
+    font-size: 75%;
+  }
+}
+
+/* Tablet*/
+@media (max-width: 1247px) {
+  html {
+    font-size: 62.5%;
+  }
+
+  #hamburger-menu {
+    display: inline-block;
+  }
+
+  .navbar .navbar-nav {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    background-color: #fff;
+    width: 30rem;
+    height: 100vh;
+    transition: 0.3s;
+  }
+
+  .navbar .navbar-nav.active {
+    right: 0;
+  }
+
+  .navbar .navbar-nav a {
+    color: var(--bg);
+    display: block;
+    margin: 1.5 rem;
+    padding: 0.5rem;
+    font-size: 2rem;
+  }
+  .navbar.navbar-nav a ::after {
+    transform-origin: 0 0;
+  }
+
+  .navbar.navbar-nav a :hover::after {
+    transform: scaleX(0.2);
+  }
+
+  .Albums .album-content1 {
+    flex-wrap: wrap;
+  }
+
+  /* Mobile Phone*/
+@media (max-width: 450px) {
+  html {
+    font-size: 55%;
+  }
+
+  .Album .row {
+    flex-wrap: wrap;
+  }
+
+  .Albums .row .albums-card img {
+    height: 24rem;
+    object-fit: cover;
+  }
+}
+}
+
+/*end*/
+    
+    </style>
+</head>
+
+<body>
+    <audio autoplay loop>
+        <source src="Prologue.mp3" type="audio/mpeg" />
+      </audio>
+      <!--Navbar Start-->
+      <nav class="navbar">
+        <a href="#" class="navbar-logo">Rekam Reality <span>Club</span></a>
+  
+        <div class="navbar-nav">
+          <a href="Index.html">Home</a>
+          <a href="Albums.html">Albums</a>
+          <a href="Show.html">Shows</a>
+          <a href="Members.html">Members</a>
+          <a href="Merch.html">Merchandise</a>
+          <a href="AboutUs.html">About Us</a>
+          <a href="Berita.html">News</a>
+        </div>
+  
+        <div class="navbar-extra">
+          <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
+        </div>
+      </nav>
+      <!--Navbar End-->
+
+    <h1><a href="Index.html" class="back-link"><i class="fas fa-chevron-left"></i></a>News Related To Music Industri</h1>
+    <h4>Source : Antara News</h4>
+    <div id="newsFeed">
+    </div>
+
+    <script>
+        const rssUrl = 'https://www.antaranews.com/rss/hiburan-musik.xml';
+
+        fetch(rssUrl)
+            .then(response => response.text())
+            .then(data => {
+                const parser = new DOMParser();
+                const xml = parser.parseFromString(data, 'text/xml');
+
+                const items = xml.querySelectorAll('item');
+
+                const newsFeedDiv = document.getElementById('newsFeed');
+                items.forEach(item => {
+                    const title = item.querySelector('title').textContent;
+                    const link = item.querySelector('link').textContent;
+                    const description = item.querySelector('description').textContent;
+
+                    const imageUrlRegex = /<img[^>]+src="([^">]+)"/;
+                    const match = imageUrlRegex.exec(description);
+                    const imageUrl = match ? match[1] : '';
+
+                    const newsItem = document.createElement('div');
+                    newsItem.classList.add('newsItem');
+                    newsItem.innerHTML = `<a href="${link}"><img src="${imageUrl}" alt="Image"></a>
+                                          <h2><a href="${link}">${title}</a></h2>`;
+
+                    newsFeedDiv.appendChild(newsItem);
+                });
+            })
+            .catch(error => {
+                console.error('Error:', error);
+            });
+    </script>
+
+    <!--footer-->
+  <footer>
+    <div class="footer-bottom">
+      <h3>Reality<span> Club</span></h3>
+      <p>
+        Reality Club Unofficial Website <br />
+        Made By Fannisa & Annisa
+      </p>
+    </div>
+  </footer>
+
+
+  <!--Footer End-->
+
+    <!-- My JavaScript--->
+    <script src="script.js"></script>
+    <!-- My JavaScript--->
+
+     <!--feather icons-->
+     <script>
+        feather.replace();
+      </script>
+      <!--feather icons-->
+
+</body>
+
+</html>
